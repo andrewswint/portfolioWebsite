@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../_models/project';
+import { Tag } from '../_models/Tag';
 
 @Component({
   selector: 'app-portfolio',
@@ -14,7 +15,7 @@ export class PortfolioComponent {
     summary: 'Test summary',
     description: '',
     projectLink: '',
-    tags: ['Angular', 'Typescript'],
+    tags: [Tag.ANGULAR, Tag.JAVASCRIPT],
     pictures: [],
   };
 
