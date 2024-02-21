@@ -1,19 +1,15 @@
 <div class="card shadow text-center" style="max-width: 350px; min-width: 350px">
   <div class="card-body">
-    <h5 class="cart-title">{{ projectName }}</h5>
-    <p class="card-text">
-      Stern Privateer jack Barbary Coast league crow's nest scurvy draught booty
-      cog. Parrel Cat o'nine tails chantey smartly cutlass quarter bounty
-      scallywag fire in the hole heave to. Measured fer yer chains log aft prow
-      lateen sail Spanish Main belaying pin long boat spike furl.
-    </p>
+    <h5 class="cart-title">{{ project.name }}</h5>
+    <p class="card-text">{{ project.summary }}</p>
     <button class="btn btn-primary">View More</button>
   </div>
 
   <div class="card-footer">
     <div class="d-flex flex flex-wrap justify-content-center">
-      <div class="tag me-2 mb-1">Java</div>
-      <div class="tag me-2 mb-1">Angular</div>
+      <div *ngFor="let tag of project.tags">
+        <div class="tag me-2 mb-1">{{ tag }}</div>
+      </div>
     </div>
   </div>
 </div>
