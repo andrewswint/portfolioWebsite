@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { Project } from '../_models/project';
+import { Project } from '../_models/Project';
 import { Tag } from '../_models/Tag';
 
 @Component({
